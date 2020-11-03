@@ -1,0 +1,78 @@
+body{
+    font-family: 'Arial';
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+}
+#login{
+    width: 100%;
+    max-width: 300px;
+    margin: 60px auto;
+    color: #fff;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px 30px;
+}
+#login h1{
+    width: 100%;
+    text-align:center;
+    font-family: 'Arial';
+}
+#login label{
+    font-family: 'Arial';
+}
+#login input[type="text"],
+#login input[type="password"]{
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 4px solid #ff851b;
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+#login input[type="button"]{
+    background: #ff851b;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Arial';
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#login input[type="button"]:hover{
+    background: rgba(0,117, 217, 0.7);
+    transition: all .5s ease;
+}
+#login button{
+    background: #ff851b;
+    color: #fff;
+    border: none;
+    width: 40%;
+    font-family: 'Arial';
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 25px 5px 5px 15px;
+    
+}
+#login button a{
+    width: 40%;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 33px 0px 22px;
+    border-radius: 5px;
+
+    
+}
+#login button:hover,
+#login button a:hover{
+    background: rgba(0,117, 217, 0.7);
+    transition: all .5s ease;
+}

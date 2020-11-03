@@ -1,0 +1,370 @@
+body {
+    font-size: 12px;
+    font-family: "Arial";
+    position: relative;
+    background: #233D58;
+    
+}
+header{
+    width: 100%;
+    height: 45px;
+    background: #233D58 ;
+    position: relative;
+    z-index: 999;
+}
+header h1 {
+    display: none;
+}
+header nav .ioMenuMovil {
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    line-height: 40px;
+    margin:  0px 0px 0px 10px;
+    padding-top: 5px;
+}
+header nav .ioMenuMovil img {
+    height: 100%;
+}
+header nav #card_menu{
+    display: none;
+    position: relative;
+    width: 230px;
+    background: white;
+    top: -30px;
+    left: 0px;
+    border-right: 3px solid #AFAEAE;
+    z-index: 999;
+    padding-bottom: 50px;
+}
+
+header nav #card_menu #logo_menu{
+    height: 200px;
+    width: 80%;
+    margin:  30px 0px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+header nav #card_menu #logo_menu img{
+    width: 190px;
+}
+header nav #card_menu ul{
+    margin-top: -20px;
+}
+header nav #card_menu ul li{
+    list-style: none;
+    font-size: 1.5em;
+    line-height: 37px;
+}
+header nav #card_menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+header #prev_section,
+header #next_section{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    
+}
+header #prev_section{
+    right: 35px;
+}
+header #next_section{
+    right: 5px;
+}
+header #prev_section img,
+header #next_section img{
+    width: 100%;
+
+    position: relative;
+}
+header #prev_section img{
+    transform: rotate(180deg);
+}
+#slider{
+  width: 100%;  
+  position: relative;
+  height: 600px;
+  
+
+}
+#slider section.slide{
+    position: absolute;
+    width: 100%;
+    top: -15px;
+    left: 0px;
+}
+#slider #Inicio{
+    background: #233D58;
+    font-family: "Arial";
+    position: relative;
+    text-align: center;
+    padding-bottom: 80px;
+}
+#slider #Inicio .mainanimation{
+    width: 80%;
+    margin-left: 10%;
+    min-height: 300px; 
+    position: absolute;
+}
+#slider #Inicio .mainlogo{
+    background: none;
+    position: relative;
+    width:  60vw;
+    margin-left: 20vw;
+    min-height: 430px;
+
+}
+#slider #Inicio .mainlogo h2{
+    font-size: 1.2em;
+    padding-top: 80px;
+    color: white;
+    font-weight: lighter;
+}
+#slider #Inicio .mainlogo strong{
+    font-size: 2em;
+    font-family: "Arial";
+    display: block;
+}
+#slider #Inicio .mainlogo figure,
+#slider #Inicio .mainlogo figure img{
+    width: 100%;
+    margin: 0px;
+}
+#slider #Inicio .buttonspage{
+    width: 100%;
+    text-align: center;
+}
+#slider #Inicio .buttonspage a{
+    display: inline-block;
+    width: 20%;
+    margin: 9px 2.5%;
+    color: white;
+    padding: 15px 2.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #f8931f;
+    text-decoration: none;
+}
+#slider #Nosotros{
+    height: 800px;
+    
+}
+#slider #Servicios{
+    height: 800px;
+  
+}
+#slider #Ayuda{
+    height: 800px;
+
+}
+#contact_form{
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    background:white;
+    width: 250px;
+
+    border-top: 1px solid black;
+    box-shadow: 0px 0px 3px #9F9E9E;
+    font-family: "Arial";
+    height: 100vh;
+    z-index: 999;
+    display: none;
+}
+#contact_form #close_form{
+    position: absolute;
+    background: orange;
+    width: 20px;
+    height: 20px;
+    left: 85%;
+    top: 190px;
+}
+#contact_form #close_form:hover{
+    cursor: pointer;
+}
+#contact_form #close_form:before{
+    top: 5px;
+    left: 9px;
+    position: relative;
+}
+#contact_form figure{
+    height: 180px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: #29abe2;
+}
+#contact_form figure img{
+    height: 100%;
+    margin: 0px;
+}
+#contact_form p{
+    margin: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+#contact_form input,
+#contact_form textarea{
+    display: block;
+    margin: 20px;
+    border:none;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+#contact_form #button{
+    background: #f8931f;
+    color: white;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+footer{
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    z-index: 90;
+    height: 150px;
+    position: fixed;
+    bottom:  -130px;
+    transition-duration: 1s;
+}
+footer:hover{
+    bottom: 0px;
+}
+footer p{
+    margin-top: 70px;
+    font-size: 0.7em;
+    font-weight: lighter;
+    font-family: "Arial";
+}
+@media screen and (min-width: 480px){
+
+    #slider #Inicio .mainlogo{
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+        padding-bottom: 50px;
+    }
+    #slider #Inicio .mainlogo h2{
+        font-size: 1.4em;
+    }
+    #slider #Inicio .buttonspage a{
+        width: 150px;
+
+    }
+}
+@media screen and (min-width: 600px){
+
+}
+@media screen and (min-width: 767px){
+
+    header{
+        height: 50px;
+    }
+    header h1{
+        display: inline-block;
+        width: 20%;
+        margin: 0px;
+        height: 50px;
+        margin-left: 80px;
+        line-height: 50px;
+        min-width: 200px;
+    }
+    header h1 > *{
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        margin: 0px 3px;
+    }
+    header h1 figure{
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+    header h1 figure img{
+        width: 100%;
+    }
+    header nav{
+        display: inline-block;
+        vertical-align: middle;
+        width: 62%;
+        position: relative;
+    }
+    header nav #showMenu,
+    header nav #hideMenu{
+        display: none;
+    }
+    header nav #card_menu{
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 0px;
+    }
+    header nav #card_menu figure{
+        display: none;
+    }
+    header nav #card_menu ul{
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+    }
+    header nav #card_menu ul li{
+        display: inline-block;
+        width: 75px;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0px -2px;
+    }
+    header nav #card_menu ul li a{
+        color: white;
+    }
+    header #prev_section,
+    header #next_section{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: #FF9B47;
+        right: 40px;
+        z-index: 999;
+        border-radius: 50%;
+    }
+    header #prev_section{
+        top: 115px;
+    }
+    header #next_section{
+        top: 190px;
+    }
+    header #prev_section img,
+    header #next_section img{
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    #contact_form{
+        top: 50px;
+        width: 400px;
+    }
+
+}
+@media screen and (min-width: 950px){
+
+}

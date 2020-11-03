@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIA SESIÓN</title>
+    
+    <link rel="stylesheet" href="css/login.css"> 
+    <link rel="stylesheet" href="css/Normalize.css">
+
+
+
+</head>
+<body>
+
+        <form id="login">
+            <h1><hr>INICIA SESIÓN<hr></h1>
+
+            <label>Usuario:</label> 
+            <input type="text" name="usuario" id="usuario" placeholder="  Tu Usuario" >
+
+            <label>Contraseña:</label>
+            <input type="password" name="pass" id="pass" placeholder="  Tu Contraseña" >
+
+            <input type="button" name="btnVereficar" id="btnVerificar" onclick="validar()" value="validar" >
+
+            <button onclick="limpiar ()">limpiar campos</button>
+            <button><a href="cajero.html">Ingresar</a></button>
+        </form>
+        <script type="text/javascript">
+        
+        let contador = 0
+        function validar(){
+            var usuario = document.getElementById("usuario").value;
+            var contraseña = document.getElementById("pass").value;
+            
+            if (usuario == "fabio" && contraseña ==  "12345" ){
+                alert("usuario y contraseña son validos")
+                contador = 3
+
+            }else{
+                contador++
+                if (contador > 3){
+                    
+                    alert("! has fallado tus tres intentos !")
+                }else{
+                    alert("usuario o contraseña son incorrectos intentos : " + contador + " verifique sus datos" )
+                    
+                }   
+            }
+        }
+        function limpiar(){
+            document.getElementById('login').reset();
+        }
+        </script>
+
+
+</body>
+
+</html> 
