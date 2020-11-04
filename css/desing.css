@@ -151,6 +151,10 @@ header #prev_section img{
     background: #f8931f;
     text-decoration: none;
 }
+#slider .buttonspage p{
+    color: white;
+    font-size: 16px;
+}
 #slider #Nosotros{
     height: 800px;
     
