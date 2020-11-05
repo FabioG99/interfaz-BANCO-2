@@ -151,6 +151,7 @@ header #prev_section img{
     background: #f8931f;
     text-decoration: none;
 }
+/*agrego coolor y tamaño de letra al parrafo de prueba*/
 #slider .buttonspage p{
     color: white;
     font-size: 16px;
